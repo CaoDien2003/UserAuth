@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+</head>
+<body>
+        <h1>Welcome to the User Authentication System</h1> {% if session.get('user') %}
+
+            <p>Welcome, {{ session['user']['username'] }}</p>
+
+            <a href="/profile">View Profile</a> | <a href="/logout">Logout</a> {% else %}
+
+            <a href="/login">Login</a> | <a href="/register">Register</a> {% endif %}
+
+</body>
+</html>
