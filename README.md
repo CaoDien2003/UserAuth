@@ -1,6 +1,6 @@
 # User Authentication System
 
-A simple user authentication system built with Flask and MongoDB. Users can register, log in, and view their profile.
+A simple user authentication system built with **Flask** and **MongoDB**. Users can register, log in, and view their profile.
 
 ---
 
